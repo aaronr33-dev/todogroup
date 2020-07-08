@@ -1,0 +1,41 @@
+<h5> {{ signature }} </h5>
+<h1 > {{ title }} </h1>
+
+
+<div class='card'>
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md-4'>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-md-6'>
+        </div>
+      </div>
+      <div class='table-responsive'>
+        <table class= 'table' >
+          <thead>
+            <tr>
+                <th>Task</th>
+                <th></th>
+                <th>Completed?</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+             <td>{{ task }} </td>
+             <td></td>
+             <td>{{ done }}</td>
+             <button class='btn btn-primary' (click)='updateTask()' > Update Task </button>
+            <button class='btn btn-primary' (click)='deleteTask()' > Delete Task </button>
+            </tr>
+            
+            
+          </tbody>
+        </table>
+        <button class='btn btn-primary' (click) ='addTask(task)' > Add Task </button>
+            
+        </div>
+    </div>
+</div>
+
