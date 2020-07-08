@@ -26,14 +26,14 @@
              <td>{{ task }} </td>
              <td></td>
              <td>{{ done }}</td>
-             <button class='btn btn-primary' (click)='updateTask()' > Update Task </button>
-            <button class='btn btn-primary' (click)='deleteTask()' > Delete Task </button>
+             <button class='btn btn-primary' (click)='goToEditTodo()' > Edit Todo </button>
+            <button class='btn btn-primary' (click)='deleteTodo()' > Delete Todo </button>
             </tr>
             
             
           </tbody>
         </table>
-        <button class='btn btn-primary' (click) ='addTask(task)' > Add Task </button>
+        <button class='btn btn-primary' (click) ='goToAddTodo()' > Add Todo </button>
             
         </div>
     </div>
